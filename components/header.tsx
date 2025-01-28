@@ -31,9 +31,14 @@ export default function Header() {
         </NavigationMenuList>
       </NavigationMenu>
       <div>
-        <Button className="p-2 text-xs font-semibold bg-secondbg text-white rounded-lg hover:bg-mainbg">
-          <CirclePlus className="mb-1" />
-          Hire Me
+        <Button
+          asChild
+          className="p-2 text-xs font-semibold bg-secondbg text-white rounded-lg hover:bg-medbg"
+        >
+          <Link href="/contact">
+            <CirclePlus className="mb-1" />
+            Hire Me
+          </Link>
         </Button>
       </div>
     </section>

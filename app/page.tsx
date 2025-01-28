@@ -1,3 +1,4 @@
+import Footer from "@/components/footer";
 import Header from "@/components/header";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
@@ -7,10 +8,8 @@ import {
   Circle,
   CirclePlus,
   Copy,
-  Github,
-  Heart,
-  Linkedin,
 } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -24,11 +23,14 @@ export default function Home() {
             <p className="text-sm">Currently working at Deloitte.</p>
             <div className="flex gap-4 mt-4">
               <Button
+                asChild
                 size="sm"
-                className="p-2 text-xs font-semibold bg-secondbg text-white rounded-md hover:bg-mainbg"
+                className="p-2 text-xs font-semibold bg-secondbg text-white rounded-md hover:bg-medbg"
               >
-                <CirclePlus className="mb-1" />
-                Hire Me
+                <Link href="/contact">
+                  <CirclePlus className="mb-1" />
+                  Hire Me
+                </Link>
               </Button>
               <Button
                 variant="ghost"
@@ -176,11 +178,14 @@ export default function Home() {
           <p>Creating awesome user experiences</p>
           <div className="flex gap-4">
             <Button
+              asChild
               size="sm"
-              className="p-2 mt-2 text-xs font-semibold bg-secondbg text-white rounded-md hover:bg-mainbg"
+              className="p-2 mt-2 text-xs font-semibold bg-secondbg text-white rounded-md hover:bg-medbg"
             >
-              <CirclePlus className="mb-1" />
-              Hire Me
+              <Link href="/contact">
+                <CirclePlus className="mb-1" />
+                Hire Me
+              </Link>
             </Button>
             <Button
               variant="ghost"
@@ -192,19 +197,7 @@ export default function Home() {
             </Button>
           </div>
         </div>
-        <div className="bg-medbg p-4 flex items-center justify-between rounded-lg">
-          <h1 className="flex gap-2 items-baseline">
-            <Circle className="w-2 h-2" />
-            Follow me
-          </h1>
-          <div className="flex gap-4">
-            <Github />
-            <Linkedin />
-          </div>
-        </div>
-        <div className="mt-2 bg-medbg flex justify-center items-center p-8 rounded-lg text-xs gap-1">
-          Made by Rishabh with <Heart className="w-3 h-3 mb-1" />
-        </div>
+        <Footer />
       </section>
     </section>
   );
