@@ -1,15 +1,10 @@
+import CopyEmailButton from "@/components/copyemail";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import WorkTogether from "@/components/worktogether";
-import {
-  ArrowRight,
-  ChevronRight,
-  Circle,
-  CirclePlus,
-  Copy,
-} from "lucide-react";
+import { ArrowRight, ChevronRight, Circle, CirclePlus } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
@@ -33,14 +28,7 @@ export default function Home() {
                   Hire Me
                 </Link>
               </Button>
-              <Button
-                variant="ghost"
-                size="sm"
-                className="p-2 text-xs font-semibold text-white rounded-md border border-mainborder"
-              >
-                <Copy className="mb-1" />
-                Copy Email
-              </Button>
+              <CopyEmailButton />
             </div>
           </div>
           <Avatar className="w-32 h-32 ring-2">
