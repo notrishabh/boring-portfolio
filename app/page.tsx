@@ -55,6 +55,23 @@ export default function Home() {
           </div>
           <Link
             className="bg-secondbg p-4 rounded-lg mt-4 flex justify-between items-center"
+            href="https://rishabhchauhan.netlify.app"
+            target="_blank"
+          >
+            <div className="flex gap-6">
+              <Avatar className="ring-4 ring-medbg">
+                <AvatarImage src="3dport.jpg" />
+                <AvatarFallback>3D</AvatarFallback>
+              </Avatar>
+              <div>
+                <h1 className="text-lg font-semibold">3D Portfolio</h1>
+                <p className="text-sm text-gray-400">The Interesting One</p>
+              </div>
+            </div>
+            <ChevronRight className="text-gray-500" />
+          </Link>
+          <Link
+            className="bg-secondbg p-4 rounded-lg mt-2 flex justify-between items-center"
             href="https://wirejoin.in"
             target="_blank"
           >
@@ -87,23 +104,6 @@ export default function Home() {
                 <p className="text-sm text-gray-400">
                   Finance Management System
                 </p>
-              </div>
-            </div>
-            <ChevronRight className="text-gray-500" />
-          </Link>
-          <Link
-            className="bg-secondbg p-4 rounded-lg mt-2 flex justify-between items-center"
-            href="https://rishabhchauhan.netlify.app"
-            target="_blank"
-          >
-            <div className="flex gap-6">
-              <Avatar className="ring-4 ring-medbg">
-                <AvatarImage src="3dport.jpg" />
-                <AvatarFallback>3D</AvatarFallback>
-              </Avatar>
-              <div>
-                <h1 className="text-lg font-semibold">3D Portfolio</h1>
-                <p className="text-sm text-gray-400">The Interesting One</p>
               </div>
             </div>
             <ChevronRight className="text-gray-500" />
@@ -182,7 +182,7 @@ export default function Home() {
             <h1 className="text-lg font-semibold">
               Technologies I am familiar with
             </h1>
-            <div className="flex gap-4 mt-4">
+            <div className="flex gap-4 mt-4 flex-wrap">
               <Avatar className="ring-4 ring-medbg">
                 <AvatarImage src="tech/react.jpg" />
                 <AvatarFallback>R</AvatarFallback>
@@ -196,16 +196,20 @@ export default function Home() {
                 <AvatarFallback>JS</AvatarFallback>
               </Avatar>
               <Avatar className="ring-4 ring-medbg">
+                <AvatarImage src="tech/sass.jpg" />
+                <AvatarFallback>SA</AvatarFallback>
+              </Avatar>
+              <Avatar className="ring-4 ring-medbg">
                 <AvatarImage src="tech/go.jpg" />
                 <AvatarFallback>GO</AvatarFallback>
               </Avatar>
               <Avatar className="ring-4 ring-medbg">
-                <AvatarImage src="tech/sql.png" />
-                <AvatarFallback>SQ</AvatarFallback>
-              </Avatar>
-              <Avatar className="ring-4 ring-medbg">
                 <AvatarImage src="tech/node.jpg" />
                 <AvatarFallback>NOD</AvatarFallback>
+              </Avatar>
+              <Avatar className="ring-4 ring-medbg">
+                <AvatarImage src="tech/sql.png" />
+                <AvatarFallback>SQ</AvatarFallback>
               </Avatar>
               <Avatar className="ring-4 ring-medbg">
                 <AvatarImage src="tech/flutter.jpg" />

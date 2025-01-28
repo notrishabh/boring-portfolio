@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "a boring portfolio",
+  title: "A Boring Portfolio",
   description: "Rishabh Chauhan's Portfolio",
 };
 
