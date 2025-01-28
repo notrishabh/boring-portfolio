@@ -36,7 +36,7 @@ export default function Header() {
           className="p-2 text-xs font-semibold bg-secondbg text-white rounded-lg hover:bg-medbg"
         >
           <Link href="/contact">
-            <CirclePlus className="mb-1" />
+            <CirclePlus />
             Hire Me
           </Link>
         </Button>
