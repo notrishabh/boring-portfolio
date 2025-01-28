@@ -17,7 +17,7 @@ export default function WorkTogether() {
           className="p-2 text-xs font-semibold bg-secondbg text-white rounded-md hover:bg-medbg"
         >
           <Link href="/contact">
-            <CirclePlus className="mb-1" />
+            <CirclePlus />
             Hire Me
           </Link>
         </Button>

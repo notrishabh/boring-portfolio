@@ -30,7 +30,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="mt-2 bg-medbg flex justify-center items-center p-8 rounded-lg text-xs gap-1">
-        Made by Rishabh with <Heart className="w-3 h-3 mb-1" />
+        Made by Rishabh with <Heart className="w-3 h-3" />
       </div>
     </section>
   );

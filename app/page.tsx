@@ -24,7 +24,7 @@ export default function Home() {
                 className="p-2 text-xs font-semibold bg-secondbg text-white rounded-md hover:bg-medbg"
               >
                 <Link href="/contact">
-                  <CirclePlus className="mb-1" />
+                  <CirclePlus />
                   Hire Me
                 </Link>
               </Button>
@@ -49,7 +49,7 @@ export default function Home() {
             >
               <Link href="https://github.com/notrishabh" target="_blank">
                 View All
-                <ArrowRight className="mb-1" />
+                <ArrowRight />
               </Link>
             </Button>
           </div>
@@ -61,7 +61,7 @@ export default function Home() {
             <div className="flex gap-6">
               <Avatar className="ring-4 ring-medbg">
                 <AvatarImage src="wirejoin.jpg" />
-                <AvatarFallback>DP</AvatarFallback>
+                <AvatarFallback>W</AvatarFallback>
               </Avatar>
               <div>
                 <h1 className="text-lg font-semibold">Wirejoin</h1>
@@ -80,7 +80,7 @@ export default function Home() {
             <div className="flex gap-6">
               <Avatar className="ring-4 ring-medbg">
                 <AvatarImage src="budgeteer.jpg" />
-                <AvatarFallback>DP</AvatarFallback>
+                <AvatarFallback>BU</AvatarFallback>
               </Avatar>
               <div>
                 <h1 className="text-lg font-semibold">Budgeteer</h1>
@@ -99,7 +99,7 @@ export default function Home() {
             <div className="flex gap-6">
               <Avatar className="ring-4 ring-medbg">
                 <AvatarImage src="3dport.jpg" />
-                <AvatarFallback>DP</AvatarFallback>
+                <AvatarFallback>3D</AvatarFallback>
               </Avatar>
               <div>
                 <h1 className="text-lg font-semibold">3D Portfolio</h1>
@@ -119,7 +119,7 @@ export default function Home() {
               <div className="flex gap-6">
                 <Avatar className="ring-4 ring-medbg">
                   <AvatarImage src="deloitte.jpg" />
-                  <AvatarFallback>DP</AvatarFallback>
+                  <AvatarFallback>D</AvatarFallback>
                 </Avatar>
                 <div>
                   <h1 className="text-lg font-semibold">Deloitte</h1>
@@ -150,7 +150,7 @@ export default function Home() {
               <div className="flex gap-6">
                 <Avatar className="ring-4 ring-medbg">
                   <AvatarImage src="ggsipu.jpg" />
-                  <AvatarFallback>DP</AvatarFallback>
+                  <AvatarFallback>GG</AvatarFallback>
                 </Avatar>
                 <div>
                   <h1 className="text-lg font-semibold">GGSIPU</h1>
@@ -171,6 +171,55 @@ export default function Home() {
                 attendance tracking system for the university.
               </li>
             </ul>
+          </div>
+        </div>
+        <div className="mt-4 rounded-lg bg-medbg p-4">
+          <h1 className="flex gap-2 items-baseline">
+            <Circle className="w-2 h-2" />
+            Skills
+          </h1>
+          <div className="p-4">
+            <h1 className="text-lg font-semibold">
+              Technologies I am familiar with
+            </h1>
+            <div className="flex gap-4 mt-4">
+              <Avatar className="ring-4 ring-medbg">
+                <AvatarImage src="tech/react.jpg" />
+                <AvatarFallback>R</AvatarFallback>
+              </Avatar>
+              <Avatar className="ring-4 ring-medbg">
+                <AvatarImage src="tech/ts.jpg" />
+                <AvatarFallback>TS</AvatarFallback>
+              </Avatar>
+              <Avatar className="ring-4 ring-medbg">
+                <AvatarImage src="tech/js.jpg" />
+                <AvatarFallback>JS</AvatarFallback>
+              </Avatar>
+              <Avatar className="ring-4 ring-medbg">
+                <AvatarImage src="tech/go.jpg" />
+                <AvatarFallback>GO</AvatarFallback>
+              </Avatar>
+              <Avatar className="ring-4 ring-medbg">
+                <AvatarImage src="tech/sql.png" />
+                <AvatarFallback>SQ</AvatarFallback>
+              </Avatar>
+              <Avatar className="ring-4 ring-medbg">
+                <AvatarImage src="tech/node.jpg" />
+                <AvatarFallback>NOD</AvatarFallback>
+              </Avatar>
+              <Avatar className="ring-4 ring-medbg">
+                <AvatarImage src="tech/flutter.jpg" />
+                <AvatarFallback>FL</AvatarFallback>
+              </Avatar>
+              <Avatar className="ring-4 ring-medbg">
+                <AvatarImage src="tech/aws.jpg" />
+                <AvatarFallback>AWS</AvatarFallback>
+              </Avatar>
+              <Avatar className="ring-4 ring-medbg">
+                <AvatarImage src="tech/docker.jpg" />
+                <AvatarFallback>DO</AvatarFallback>
+              </Avatar>
+            </div>
           </div>
         </div>
         <WorkTogether />

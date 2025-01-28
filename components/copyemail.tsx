@@ -21,7 +21,7 @@ const CopyEmailButton = () => {
       className="p-2 text-xs font-semibold text-white rounded-md border border-mainborder"
       onClick={handleCopy}
     >
-      <Copy className="mb-1" />
+      <Copy />
       Copy Email
     </Button>
   );
