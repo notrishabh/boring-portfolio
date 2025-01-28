@@ -53,7 +53,11 @@ export default function Home() {
               </Link>
             </Button>
           </div>
-          <div className="bg-secondbg p-4 rounded-lg mt-4 flex justify-between items-center">
+          <Link
+            className="bg-secondbg p-4 rounded-lg mt-4 flex justify-between items-center"
+            href="https://wirejoin.in"
+            target="_blank"
+          >
             <div className="flex gap-6">
               <Avatar className="ring-4 ring-medbg">
                 <AvatarImage src="wirejoin.jpg" />
@@ -67,8 +71,12 @@ export default function Home() {
               </div>
             </div>
             <ChevronRight className="text-gray-500" />
-          </div>
-          <div className="bg-secondbg p-4 rounded-lg mt-2 flex justify-between items-center">
+          </Link>
+          <Link
+            className="bg-secondbg p-4 rounded-lg mt-2 flex justify-between items-center"
+            href="https://budgeteer-lake.vercel.app/"
+            target="_blank"
+          >
             <div className="flex gap-6">
               <Avatar className="ring-4 ring-medbg">
                 <AvatarImage src="budgeteer.jpg" />
@@ -82,8 +90,12 @@ export default function Home() {
               </div>
             </div>
             <ChevronRight className="text-gray-500" />
-          </div>
-          <div className="bg-secondbg p-4 rounded-lg mt-2 flex justify-between items-center">
+          </Link>
+          <Link
+            className="bg-secondbg p-4 rounded-lg mt-2 flex justify-between items-center"
+            href="https://rishabhchauhan.netlify.app"
+            target="_blank"
+          >
             <div className="flex gap-6">
               <Avatar className="ring-4 ring-medbg">
                 <AvatarImage src="3dport.jpg" />
@@ -91,13 +103,11 @@ export default function Home() {
               </Avatar>
               <div>
                 <h1 className="text-lg font-semibold">3D Portfolio</h1>
-                <p className="text-sm text-gray-400">
-                  The Interesting Portfolio
-                </p>
+                <p className="text-sm text-gray-400">The Interesting One</p>
               </div>
             </div>
             <ChevronRight className="text-gray-500" />
-          </div>
+          </Link>
         </div>
         <div className="mt-4 rounded-lg bg-medbg p-4">
           <h1 className="flex gap-2 items-baseline">
