@@ -55,17 +55,20 @@ export default function Home() {
               Projects
             </h1>
             <Button
+              asChild
               size="sm"
               className="p-2 text-xs font-semibold bg-secondbg text-white rounded-md hover:bg-mainbg"
             >
-              View All
-              <ArrowRight className="mb-1" />
+              <Link href="https://github.com/notrishabh" target="_blank">
+                View All
+                <ArrowRight className="mb-1" />
+              </Link>
             </Button>
           </div>
           <div className="bg-secondbg p-4 rounded-lg mt-4 flex justify-between items-center">
             <div className="flex gap-6">
               <Avatar className="ring-4 ring-medbg">
-                <AvatarImage src="dp.png" />
+                <AvatarImage src="wirejoin.jpg" />
                 <AvatarFallback>DP</AvatarFallback>
               </Avatar>
               <div>
@@ -80,7 +83,7 @@ export default function Home() {
           <div className="bg-secondbg p-4 rounded-lg mt-2 flex justify-between items-center">
             <div className="flex gap-6">
               <Avatar className="ring-4 ring-medbg">
-                <AvatarImage src="dp.png" />
+                <AvatarImage src="budgeteer.jpg" />
                 <AvatarFallback>DP</AvatarFallback>
               </Avatar>
               <div>
@@ -95,7 +98,7 @@ export default function Home() {
           <div className="bg-secondbg p-4 rounded-lg mt-2 flex justify-between items-center">
             <div className="flex gap-6">
               <Avatar className="ring-4 ring-medbg">
-                <AvatarImage src="dp.png" />
+                <AvatarImage src="3dport.jpg" />
                 <AvatarFallback>DP</AvatarFallback>
               </Avatar>
               <div>
@@ -117,7 +120,7 @@ export default function Home() {
             <div className="flex justify-between items-start">
               <div className="flex gap-6">
                 <Avatar className="ring-4 ring-medbg">
-                  <AvatarImage src="dp.png" />
+                  <AvatarImage src="deloitte.jpg" />
                   <AvatarFallback>DP</AvatarFallback>
                 </Avatar>
                 <div>
@@ -148,7 +151,7 @@ export default function Home() {
             <div className="flex justify-between items-start">
               <div className="flex gap-6">
                 <Avatar className="ring-4 ring-medbg">
-                  <AvatarImage src="dp.png" />
+                  <AvatarImage src="ggsipu.jpg" />
                   <AvatarFallback>DP</AvatarFallback>
                 </Avatar>
                 <div>
