@@ -11,7 +11,7 @@ const SERVICE_ID = process.env.NEXT_PUBLIC_SERVICE_ID;
 const TEMPLATE_ID = process.env.NEXT_PUBLIC_TEMPLATE_ID;
 const PUBLIC_KEY = process.env.NEXT_PUBLIC_PUBLIC_KEY;
 
-const ContactForm = () => {
+export default function ContactForm() {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleOnSubmit = (e: any) => {
     e.preventDefault();
@@ -81,6 +81,4 @@ const ContactForm = () => {
       </div>
     </section>
   );
-};
-
-export default ContactForm;
+}
