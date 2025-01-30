@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import WorkTogether from "@/components/worktogether";
 import { ArrowRight, ChevronRight, Circle, CirclePlus } from "lucide-react";
 import Link from "next/link";
+import projects from "../projects.json";
 
 export default function Home() {
   return (
@@ -53,61 +54,26 @@ export default function Home() {
               </Link>
             </Button>
           </div>
-          <Link
-            className="bg-secondbg p-4 rounded-lg mt-4 flex justify-between items-center"
-            href="https://rishabhchauhan.netlify.app"
-            target="_blank"
-          >
-            <div className="flex gap-6">
-              <Avatar className="ring-4 ring-medbg">
-                <AvatarImage src="3dport.jpg" />
-                <AvatarFallback>3D</AvatarFallback>
-              </Avatar>
-              <div>
-                <h1 className="text-lg font-semibold">3D Portfolio</h1>
-                <p className="text-sm text-gray-400">The Interesting One</p>
+          {projects.map((project, i) => (
+            <Link
+              key={i}
+              className="bg-secondbg p-4 rounded-lg mt-4 flex justify-between items-center"
+              href={project.url}
+              target="_blank"
+            >
+              <div className="flex gap-6">
+                <Avatar className="ring-4 ring-medbg">
+                  <AvatarImage src={project.imagesrc} />
+                  <AvatarFallback>{project.imagefallback}</AvatarFallback>
+                </Avatar>
+                <div>
+                  <h1 className="text-lg font-semibold">{project.name}</h1>
+                  <p className="text-sm text-gray-400">{project.description}</p>
+                </div>
               </div>
-            </div>
-            <ChevronRight className="text-gray-500" />
-          </Link>
-          <Link
-            className="bg-secondbg p-4 rounded-lg mt-2 flex justify-between items-center"
-            href="https://wirejoin.in"
-            target="_blank"
-          >
-            <div className="flex gap-6">
-              <Avatar className="ring-4 ring-medbg">
-                <AvatarImage src="wirejoin.jpg" />
-                <AvatarFallback>W</AvatarFallback>
-              </Avatar>
-              <div>
-                <h1 className="text-lg font-semibold">Wirejoin</h1>
-                <p className="text-sm text-gray-400">
-                  CRM for Internet Service Providers
-                </p>
-              </div>
-            </div>
-            <ChevronRight className="text-gray-500" />
-          </Link>
-          <Link
-            className="bg-secondbg p-4 rounded-lg mt-2 flex justify-between items-center"
-            href="https://budgeteer-lake.vercel.app/"
-            target="_blank"
-          >
-            <div className="flex gap-6">
-              <Avatar className="ring-4 ring-medbg">
-                <AvatarImage src="budgeteer.jpg" />
-                <AvatarFallback>BU</AvatarFallback>
-              </Avatar>
-              <div>
-                <h1 className="text-lg font-semibold">Budgeteer</h1>
-                <p className="text-sm text-gray-400">
-                  Finance Management System
-                </p>
-              </div>
-            </div>
-            <ChevronRight className="text-gray-500" />
-          </Link>
+              <ChevronRight className="text-gray-500" />
+            </Link>
+          ))}
         </div>
         <div className="mt-4 rounded-lg bg-medbg p-4">
           <h1 className="flex gap-2 items-baseline">

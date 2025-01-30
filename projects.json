@@ -1,0 +1,23 @@
+[
+  {
+    "name": "3D Portfolio",
+    "description": "The Interesting One",
+    "url": "https://rishabhchauhan.netlify.app",
+    "imagesrc": "3dport.jpg",
+    "imagefallback": "3D"
+  },
+  {
+    "name": "Budgeteer",
+    "description": "Finance Management System",
+    "url": "https://budgeteer.rishabh.life",
+    "imagesrc": "budgeteer.jpg",
+    "imagefallback": "BU"
+  },
+  {
+    "name": "Wirejoin",
+    "description": "CRM for Internet Service Providers",
+    "url": "https://wirejoin.in",
+    "imagesrc": "wirejoin.jpg",
+    "imagefallback": "W"
+  }
+]
