@@ -84,6 +84,35 @@ export default function Home() {
             <div className="flex justify-between items-start">
               <div className="flex gap-6">
                 <Avatar className="ring-4 ring-medbg">
+                  <AvatarImage src="godaddy.png" />
+                  <AvatarFallback>G</AvatarFallback>
+                </Avatar>
+                <div>
+                  <h1 className="text-lg font-semibold">GoDaddy</h1>
+                  <p className="text-sm text-gray-400">
+                    Software Engineer - II
+                  </p>
+                </div>
+              </div>
+              <div className="text-sm text-right">
+                <p>Mar 2025 - Present</p>
+                <p>Gurugram, IN</p>
+              </div>
+            </div>
+            <ul className="mt-4 text-sm list-disc ml-4">
+              <li>
+                Developed Govalue domain valuation platform used by 20M+ monthly users
+              </li>
+              <li>
+                Independently drove production reliability improvements, reducing 5xx error rates from over 5% to below 0.01%
+              </li>
+              <li>Designed and owned the backend architecture integrating several SageMaker-hosted ML models</li>
+            </ul>
+          </div>
+          <div className="bg-secondbg p-4 rounded-lg mt-4">
+            <div className="flex justify-between items-start">
+              <div className="flex gap-6">
+                <Avatar className="ring-4 ring-medbg">
                   <AvatarImage src="deloitte.jpg" />
                   <AvatarFallback>D</AvatarFallback>
                 </Avatar>
@@ -95,7 +124,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="text-sm text-right">
-                <p>Jan 2022 - Present</p>
+                <p>Jan 2022 - Mar 2025</p>
                 <p>Pune, IN</p>
               </div>
             </div>
