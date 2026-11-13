@@ -17,7 +17,7 @@ export default function Home() {
           <div>
             <h1 className="text-xl font-semibold">I&apos;m Rishabh Chauhan</h1>
             <p className="text-sm mt-2">Software Engineer from Delhi, IN.</p>
-            <p className="text-sm">Currently working at Deloitte.</p>
+            <p className="text-sm">Currently working at GoDaddy.</p>
             <div className="flex gap-4 mt-4">
               <Button
                 asChild
